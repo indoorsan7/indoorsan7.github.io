@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>いんどあのプロフィール</title>
+    <!-- Tailwind CSS CDNの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* グローバルなフォント設定と背景色 */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* ダークな背景色 */
+            color: #e2e8f0; /* 明るいテキスト色 */
+        }
+        html {
+            scroll-behavior: smooth; /* スムーズスクロールを有効にする */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ナビゲーションバー -->
+    <nav class="bg-gray-800 p-4 shadow-lg rounded-b-xl mx-auto max-w-7xl mt-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
+                いんどあのページ
+            </a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">私について</a>
+                <a href="#projects" class="text-gray-300 hover:text-white transition-colors duration-300">活動</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section id="about" class="py-20 text-center bg-gray-900 shadow-xl rounded-xl mx-auto max-w-7xl mt-8 p-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
+                こんにちは、<span class="text-blue-400">いんどあ</span>です
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                BOT作ったりいろいろしてます（）<br>
+                私が開発しているDiscord Botについて紹介します。
+            </p>
+            <!-- ヒーローセクションから「詳しくはこちら」ボタンを削除 -->
+            <!-- 必要に応じてプロフィール写真などを追加できます -->
+            <!-- <img src="https://placehold.co/150x150/2d3748/cbd5e0?text=Your+Photo" alt="いんどあの写真" class="rounded-full mx-auto mb-6 shadow-md"> -->
+        </div>
+    </section>
+
+    <!-- 活動・プロジェクトセクション -->
+    <section id="projects" class="py-16 bg-gray-800 rounded-xl mx-auto max-w-7xl mt-8 p-6">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">私のDiscord Bot開発</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 活動カード1 -->
+                <div class="bg-gray-700 p-8 rounded-xl shadow-lg transition-transform transform hover:scale-105 duration-300 border border-gray-600 flex flex-col items-center">
+                    <div class="text-5xl text-blue-400 mb-4 flex justify-center">🤖</div>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Discord Bot開発</h3>
+                    <p class="text-gray-300 mb-6 text-center">
+                        様々な機能を持つDiscord Botを開発しています。サーバー管理を効率化したり、コミュニティを活性化させるためのツールを提供しています。
+                    </p>
+                    <!-- 詳しくはこちらボタンをカード内に追加 -->
+                    <a href="https://indoorsan7.github.io/indoor-discordbot" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 inline-block mt-auto" target="_blank" rel="noopener noreferrer">
+                        詳しくはこちら
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 py-8 text-center rounded-xl mx-auto max-w-7xl mt-8 mb-4 p-6">
+        <div class="container mx-auto px-4">
+            <div class="mt-4 space-x-4">
+                <!-- Discord Botへのリンク (フッターにも残しています) -->
+                <a href="https://indoorsan7.github.io/indoor-discordbot" class="text-gray-400 hover:text-white transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
